@@ -12,9 +12,12 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
+
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/MainView.fxml"));
+			//Tela de Scroll
 			ScrollPane scrollPane = loader.load();
 			
+			//Ajustar a configuração da barra de ferramentas
 			scrollPane.setFitToHeight(true);
 			scrollPane.setFitToWidth(true);
 			
